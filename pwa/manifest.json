@@ -1,0 +1,22 @@
+
+{
+  "short_name": "Proyek PWA",
+  "name": "Proyek Lapangan PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#d97706",
+  "description": "Aplikasi pelaporan proyek dan material untuk di lapangan.",
+  "icons": [
+    {
+      "src": "/pwa/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

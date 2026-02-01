@@ -1,0 +1,7 @@
+{
+  "name": "Proyek Lapangan PWA",
+  "description": "A Progressive Web App for project and material reporting, designed for field use. It features a dashboard, reporting forms, material management, and project history with a professional, mobile-first interface.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
