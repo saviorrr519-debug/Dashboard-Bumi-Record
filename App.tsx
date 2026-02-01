@@ -42,7 +42,7 @@ const App: React.FC = () => {
 
     return (
         <HashRouter>
-            <div className="min-h-screen bg-slate-50 text-slate-800 font-sans">
+            <div className="min-h-screen text-slate-100 font-sans">
                 <main className="pb-24 pt-safe-top">
                     <Routes>
                         <Route path="/" element={<Navigate to="/dashboard" replace />} />

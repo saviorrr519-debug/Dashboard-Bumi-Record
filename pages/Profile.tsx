@@ -4,9 +4,9 @@ import Header from '../components/Header';
 import { usePWAInstall } from '../hooks/usePWAInstall';
 
 const ProfileMenuItem: React.FC<{ icon: React.ReactNode, text: string, onClick?: () => void }> = ({ icon, text, onClick }) => (
-    <button onClick={onClick} className="flex items-center w-full p-4 bg-white rounded-lg shadow-sm hover:bg-slate-50 transition-colors">
+    <button onClick={onClick} className="flex items-center w-full p-4 bg-slate-900/20 backdrop-blur-md border border-slate-100/20 rounded-xl shadow-lg shadow-black/20 hover:bg-slate-900/40 transition-colors">
         <div className="text-primary mr-4">{icon}</div>
-        <span className="font-semibold text-slate-700">{text}</span>
+        <span className="font-semibold text-slate-100">{text}</span>
         <div className="ml-auto text-slate-400">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
         </div>
@@ -21,12 +21,10 @@ const Profile: React.FC = () => {
     const { isInstallable, handleInstallClick } = usePWAInstall();
 
     const handleExport = (format: 'PDF' | 'Excel') => {
-        // Mock functionality
         alert(`Fungsi Ekspor ke ${format} akan diimplementasikan pada backend.`);
     }
 
     const handleLogout = () => {
-        // Mock functionality
         alert('Anda telah logout.');
     }
 
@@ -34,11 +32,11 @@ const Profile: React.FC = () => {
         <div>
             <Header title="Profil & Pengaturan" />
             <div className="p-4 space-y-6">
-                <div className="bg-white p-5 rounded-xl shadow-md flex items-center space-x-4">
-                    <img src="https://picsum.photos/seed/avatar/80/80" alt="Avatar" className="w-20 h-20 rounded-full" />
+                <div className="bg-slate-900/20 backdrop-blur-md border border-slate-100/20 p-5 rounded-2xl shadow-lg shadow-black/20 flex flex-col items-center text-center space-y-2">
+                    <img src="https://picsum.photos/seed/avatar/80/80" alt="Avatar" className="w-24 h-24 rounded-full border-4 border-primary/50" />
                     <div>
-                        <h2 className="text-xl font-bold text-slate-800">Budi Santoso</h2>
-                        <p className="text-slate-500">Mandor Lapangan</p>
+                        <h2 className="text-xl font-bold text-white">Budi Santoso</h2>
+                        <p className="text-slate-300">Mandor Lapangan</p>
                     </div>
                 </div>
 
